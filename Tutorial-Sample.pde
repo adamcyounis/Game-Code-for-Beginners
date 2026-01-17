@@ -117,6 +117,12 @@ void DrawScore() {
   text(bounceCount, 22, 22 );
 }
 
+void DrawPaddle() {
+  fill(255);
+  rectMode(CENTER);
+  rect(paddlePos.x, paddlePos.y, paddleSize.x, paddleSize.y);
+}
+
 void HandleInput() {
   paddlePos.x = mouseX;
   // paddlePos.y = mouseY;
@@ -131,8 +137,4 @@ void mousePressed() {
   }
 }
 
-void DrawPaddle() {
-  fill(255);
-  rectMode(CENTER);
-  rect(paddlePos.x, paddlePos.y, paddleSize.x, paddleSize.y);
-}
+
